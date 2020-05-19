@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script id="counter" value="1"></script>
+        <title>Gallery</title>
+        <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display:400,500&display=swap"></link><link rel"stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"></link> -->
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <div class="telescope">
+            <div class="telescope-content">
+                <!-- <input class="telescope-title" type="text">
+                <input class="telescope-description" type="text"> -->
+                <img class="telescope-photo" type="image" src="">
+            </div>
+        </div>
+        <div id="app-container">
+            <div id="app-header">
+                <header class="header">
+                    <div class="flex">
+                        <span class="header-title">
+                            <img class="header-logo" src="https://icon.now.sh/graphcool">
+                            THPROJECTION
+                        </span>
+                        <a href="#/" class="header-link">Main</a>
+                        <a href="gallery.html" class="header-link">Gallery</a>
+                        <a href="#/register" class="header-link">Register</a>
+                        <a href="#/login" class="header-link">Login</a>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div id="form-container">
+            <h1>Upload Photo</h1>
+            <form id="form" autocomplete="off">
+                <input id="photo-title" placeholder="Title" type = "text">
+                <input id="photo-description" placeholder="Description" type="text">
+                <input id="photo-url" placeholder="URL" type="text">
+                <div id="form-buttons">
+                    <button type="submit" id="upload-button">Submit</button>
+                    <button type="button" id="upload-close-button">Close</button>
+                </div>
+            </form>
+        </div>
+        <div id="photos-container">
+            <div id="photo-column1"></div>
+            <div id="photo-column2"></div>
+            <div id="photo-column3"></div>
+            <div id="like-tooltip"></div>
+            <div id="delete-tooltip"></div>
+        </div> 
+        <script src="app.js"></script>     
+    </body>
+</html>
